@@ -60,7 +60,7 @@ ingress:
           pathType: Prefix
           backend:
              service:
-                name: hello-arc
+                name: hello-arc-app
                 port:
                   number: 80
   # tls: []

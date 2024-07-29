@@ -1,13 +1,13 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: hello-arc-test
+  name: hello-arc-app
   namespace: hello-arc-test
   annotations:
     clusterconfig.azure.com/use-managed-source: "true"
 spec:
   interval: 1m
-  releaseName: hello-arc
+  releaseName: hello-arc-test-app-release
   chart:
     spec:
       chart: ./charts/hello-arc
@@ -18,4 +18,4 @@ spec:
     replicaCount: 3
     env:
       name: MESSAGE
-      value: Welcome Jorge Perona to Azure Arc GitOps Demo - Friday 26!
+      value: Welcome Jorge Perona to Azure Arc GitOps Demo - Monday 29th!
