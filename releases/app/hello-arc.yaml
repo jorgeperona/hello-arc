@@ -1,8 +1,8 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: hello-arc
-  namespace: hello-arc
+  name: hello-arc-app
+  namespace: arc-hello-test
   annotations:
     clusterconfig.azure.com/use-managed-source: "true"
 spec:
