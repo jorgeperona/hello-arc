@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-arc-app
+  namespace: hello-arc-test
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: hello-arc-app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-arc
+  namespace: hello-arc-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-arc-app
+  template:
+    metadata:
+      labels:
+        app: hello-arc-app
+    spec:
+      containers:
+      - name: hello-arc-app
+        image: azurearcjumpstart.azurecr.io/hello-arc-gitops:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MESSAGE
+          value: Welcome to Azure Arc GitOps Demo!
