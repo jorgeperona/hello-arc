@@ -10,7 +10,7 @@ spec:
   releaseName: hello-arc-test-app-release
   chart:
     spec:
-      chart: ./charts/hello-arc
+      chart: ./charts/hello-arc-app
   values:
     image:
       repository: azurearcjumpstart.azurecr.io/hello-arc-gitops
