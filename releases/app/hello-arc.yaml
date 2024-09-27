@@ -18,4 +18,4 @@ spec:
     replicaCount: 3
     env:
       name: MESSAGE
-      value: Welcome Gira Latam 24 to Azure Arc GitOps Demo!
+      value: Welcome Team 1 to Azure Arc GitOps Demo!
