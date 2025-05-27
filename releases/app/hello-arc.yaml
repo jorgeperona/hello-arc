@@ -18,4 +18,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Welcome Sevilla to the World of Azure Arc!
+      value: Welcome Madrid to the World of Azure Arc!
