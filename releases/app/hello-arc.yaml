@@ -18,4 +18,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Bye Bye Plainners!!
+      value: Gracias por vuestra atención... ahora toca hacer un ejercicio!!
