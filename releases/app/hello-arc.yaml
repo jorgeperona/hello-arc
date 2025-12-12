@@ -18,4 +18,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Gracias Ciencia Terapia por vuestra labor!!
+      value: Gracias a todos por vuestra asistencia!!
