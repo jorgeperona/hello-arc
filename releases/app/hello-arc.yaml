@@ -18,4 +18,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Gracias por vuestra atención... Feliz Navidad!!
+      value: Gracias Ciencia Terapia por vuestra labor!!
